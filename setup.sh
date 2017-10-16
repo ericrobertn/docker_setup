@@ -11,10 +11,10 @@ sudo yum install -y yum-utils \
 sudo yum-config-manager \
 --add-repo \
 https://download.docker.com/linux/centos/docker-ce.repo
+
+curl https://releases.rancher.com/install-docker/17.06.sh | sh
 	
-sudo yum-config-manager --enable docker-ce-edge
-sudo yum-config-manager --enable docker-ce-test
-sudo yum -y install docker-ce
+
 sudo systemctl enable docker
 sudo systemctl start docker
 
